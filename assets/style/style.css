@@ -1,0 +1,25 @@
+#section {
+    background-image: url('/assets/img/5.png');
+    background-size: cover;
+    background-position: center;
+}
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.medpart {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+}
+
+.medpart-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+
