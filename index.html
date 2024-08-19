@@ -8,6 +8,30 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
+    <!-- Extend Layout-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch('layout.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('layout-placeholder').innerHTML = data;
+          });
+      });
+    </script>
+     <!-- End Extend Layout -->
+
+     <!-- Extend Footer-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch('footer-us.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+          });
+      });
+    </script>
+     <!-- End Extend Footer -->
+
     <link rel="stylesheet" href="/assets/style/style.css" />
 
     <!-- google font -->
@@ -234,7 +258,7 @@
                 >
                   <li>
                     <a
-                      href="/page-us/page-beckwith.html"
+                      href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Beckwit</a
                     >
@@ -751,72 +775,9 @@
   </div>
     <!-- contact us end -->
 
-    <!-- footer start -->
-    <footer class="footer">
-      <hr />
-      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div class="md:flex md:justify-between">
-          <div class="mb-6 md:mb-0">
-            <a href="#" class="flex items-center">
-              <h1 class="text-3xl font-semibold text-yellow-400">
-                PT Kalindra Setyatama
-              </h1>
-            </a>
-            <p class="mt-5 text-white">
-              We offer training and skill building courses across Technology,
-              Design, <br />Management, Science and Humanities..
-            </p>
-          </div>
-          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
-            <div>
-              <h2
-                class="mb-6 text-sm font-semibold text-white uppercase dark:text-white"
-              >
-                Navigasi
-              </h2>
-              <ul class="text-white dark:text-gray-400 font-semibold">
-                <li class="mb-4">
-                  <a href="#" class="hover:underline">Home</a>
-                </li>
-                <li class="mb-4">
-                  <a href="/about" class="hover:underline">About</a>
-                </li>
-                <li>
-                  <a href="/login" class="hover:underline">Product</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2
-                class="mb-6 text-sm font-semibold text-white uppercase dark:text-white"
-              >
-                Kontak Kami
-              </h2>
-              <ul class="text-white dark:text-gray-400 font-semibold">
-                <li class="mb-4">
-                  <a class="hover:underline"
-                    >Jl. Merawan Cinere One <br>Commercial Park <br>Block KA-1, Kota Depok 16513</a
-                  >
-                </li>
-                <li>
-                  <a class="hover:underline">kaliandra@kaliandra.co.id</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <hr
-          class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-        />
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-white sm:text-center dark:text-gray-400"
-            >© 2024 <a href="/" class="hover:underline">KalindraSetyatama™</a>.
-            All Rights Reserved.
-          </span>
-        </div>
-      </div>
-    </footer>
-    <!-- footer end -->
+    <!-- Panggil Extend Footer Layout-->
+    <div id="footer-placeholder"></div>
+    <!-- End panggil Extends Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
