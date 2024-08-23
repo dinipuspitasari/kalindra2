@@ -7,6 +7,10 @@
   background-size: cover;
   background-position: center;
 }
+
+#section background-image {
+  opacity: 80%;
+}
 @keyframes slide {
   from {
     transform: translateX(0);
