@@ -6,11 +6,10 @@
   background-image: url("/assets/img/5.png");
   background-size: cover;
   background-position: center;
+  border-radius: 0 0 90px 90px;
 }
 
-#section background-image {
-  opacity: 80%;
-}
+
 @keyframes slide {
   from {
     transform: translateX(0);
@@ -164,7 +163,7 @@
 }
 
 .inputBox input[type="submit"] {
-  background-color: #2c292f;
+  background-color: #E3A008; 
   border-radius: 20px;
   color: #ffffff;
   border: none;
