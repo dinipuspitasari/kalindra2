@@ -271,7 +271,7 @@
                   </li>
                   <li>
                     <a
-                      href="/page-us/page-elmex.html"
+                      href="#"
                       class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
                       >Elmex</a
                     >
@@ -290,7 +290,7 @@
         <div class="bg-white pt-32 pb-10">
             <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
                 <div class="mb-4 items-end justify-between space-y-4 sm:flex sm:space-y-0 md:mb-8">
-                    <!-- <h1>Home  >  Product  >  Beckwith</h1> -->
+                    <!-- <h1>Home  >  Product  >  Relpol</h1> -->
                     <div class="flex w-full justify-end">
                         <form id="search-form" class="w-full max-w-md" role="search">
                             <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
@@ -308,8 +308,7 @@
                         </form>
                     </div>
                 </div>
-
-           
+                
             <!-- memanggil komponen produk -->
                 <div id="main-product"></div>
             </div>
@@ -328,8 +327,7 @@
             .then(response => response.text())
             .then(data => document.querySelector(el).innerHTML = data);
     }
-    loadHTML('#main-product', '/product/product-beckwith.html');
-    loadHTML('#hero-beckwith', '/hero-us.html');
+    loadHTML('#main-product', '/product/product-elmex.html');
     loadHTML('#footer', '/footer-us.html');
    
 </script>
