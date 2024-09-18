@@ -334,40 +334,41 @@
 
 <!-- function fitur search -->
 <script>
-function search_product() {
-    let input = document.getElementById('searchbar').value;
-    input = input.toLowerCase();
-    let x = document.getElementsByClassName('group relative');
-    let found = false; // Menyimpan status apakah ada produk yang ditemukan
-
-    for (let i = 0; i < x.length; i++) {
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-            x[i].style.display = "none";
-        } else {
-            x[i].style.display = "list-item";
-            found = true; // Jika ada produk yang cocok, set found menjadi true
-        }
-    }
-
-    // Menangani kasus jika tidak ada produk yang ditemukan
-    let noProductMessage = document.getElementById('no-product-message');
-    if (!found) {
-        if (!noProductMessage) {
-            noProductMessage = document.createElement('div');
-            noProductMessage.id = 'no-product-message';
-            noProductMessage.innerText = 'Produk tidak ditemukan';
-            noProductMessage.style.color = 'red'; // Atur gaya teks sesuai kebutuhan
-            noProductMessage.style.marginTop = '10px'; // Atur jarak sesuai kebutuhan
-            noProductMessage.style.fontSize = '30px'; // Membuat teks lebih besar
-            document.getElementById('product-container').appendChild(noProductMessage);
-        }
-    } else {
-        if (noProductMessage) {
-            noProductMessage.remove();
-        }
-    }
-}
-  </script>
+  function search_product() {
+      let input = document.getElementById('searchbar').value;
+      input = input.toLowerCase();
+      let x = document.getElementsByClassName('group relative');
+      let found = false; // Menyimpan status apakah ada produk yang ditemukan
+  
+      for (let i = 0; i < x.length; i++) {
+          if (!x[i].innerHTML.toLowerCase().includes(input)) {
+              x[i].style.display = "none";
+          } else {
+              x[i].style.display = "list-item";
+              found = true; // Jika ada produk yang cocok, set found menjadi true
+          }
+      }
+  
+      // Menangani kasus jika tidak ada produk yang ditemukan
+      let noProductMessage = document.getElementById('no-product-message');
+      if (!found) {
+          if (!noProductMessage) {
+              noProductMessage = document.createElement('div');
+              noProductMessage.id = 'no-product-message';
+              noProductMessage.innerText = 'Product not found';
+              noProductMessage.style.color = 'red'; // Atur gaya teks sesuai kebutuhan
+              noProductMessage.style.marginTop = '10px'; // Atur jarak sesuai kebutuhan
+              noProductMessage.style.fontSize = '30px'; // Membuat teks lebih besar
+              document.getElementById('product-container').appendChild(noProductMessage);
+          }
+      } else {
+          if (noProductMessage) {
+              noProductMessage.remove();
+          }
+      }
+  }
+    </script>
+      
     
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
   </body>
