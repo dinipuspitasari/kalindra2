@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      <!-- Extend Footer-->
     <script>
       document.addEventListener("DOMContentLoaded", function() {
@@ -293,7 +293,7 @@
   <!-- nav end -->
 
   
-<div class="pt-32">
+<div class="pt-32" data-aos="zoom-in-down" data-aos-duration="1500">
   <div class="text-center ps-10 pe-10">
     <h1 class="text-3xl font-semibold text-yellow-400 pb-5">ABOUT US</h1>
     <h1>PT. KALIANDRA SETYATAMA is Trading and Engineering Company was founded in 1992. and has its office at Jl. Merawan, Cinere One Commercial Park Blok KA-1, Pangkalan Jati, Cinere Depok – 16513 As a Representative and Sole distributor of electrical product, the main activity of the company is as a supplier of the product to the main contractors.</h1>
@@ -303,10 +303,10 @@
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 pt-32">
   <div class="grid gap-5 row-gap-8 lg:grid-cols-1">
     <!-- Konten Teks -->
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center" >
       <div class="grid gap-5 row-gap-8 sm:grid-cols-2">
         <!-- Card 1 -->
-        <div class="bg-yellow-400 border-l-4 shadow-sm border-purple-700 hover:bg-yellow-500">
+        <div class="bg-yellow-400 border-l-4 shadow-sm border-purple-700 hover:bg-yellow-500" data-aos="zoom-in-right" data-aos-duration="1500">
           <div class="h-full p-5 border border-l-0 rounded-r">
             <h6 class="mb-2 font-bold leading-5 text-2xl text-center">
              CUSTOMER
@@ -317,7 +317,7 @@
           </div>
         </div>
         <!-- Card 2 -->
-        <div class="bg-yellow-400 border-l-4 shadow-sm border-purple-700 hover:bg-yellow-500">
+        <div class="bg-yellow-400 border-l-4 shadow-sm border-purple-700 hover:bg-yellow-500" data-aos="zoom-in-left" data-aos-duration="1500">
           <div class="h-full p-5 border border-l-0 rounded-r">
             <h6 class="mb-2 font-bold leading-5 text-2xl text-center">
              ORGANIZATION
@@ -339,8 +339,8 @@
  <!-- section representation -->
  <div class="pt-4 px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
   <!-- Bagian Header -->
-  <div class="max-w-full mb-10 md:mx-auto lg:max-w-2xl md:mb-12 text-center">
-    <h2 class="mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+  <div class="max-w-full mb-10 md:mx-auto lg:max-w-2xl md:mb-12 text-center" data-aos="zoom-in-up" data-aos-duration="1000">
+    <h2 class="mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto" >
         REPRESENTATION
     </h2>
     <p class="text-base text-gray-700 md:text-lg">
@@ -349,7 +349,7 @@
   </div>
 
   <!-- Bagian Grid Cards -->
-  <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-4">
+  <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-4" data-aos="zoom-in-up" data-aos-duration="1500">
     <!-- Card 1 -->
     <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
       <div class="flex items-center justify-center w-24 mb-4 rounded">
@@ -425,7 +425,7 @@
 
         
     <!-- memanggil komponen footer -->
-    <div id = "footer"></div>
+    <div id = "footer" data-aos="zoom-out-down" data-aos-duration="1500"></div>
 
 
    <!-- Panggil Extend Footer Layout-->
@@ -433,5 +433,9 @@
    <!-- End panggil Extends Footer -->
     
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
