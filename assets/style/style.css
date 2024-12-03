@@ -2,6 +2,11 @@
   font-family: "Plus Jakarta Sans", sans-serif;
   text-decoration: none;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 #section {
   background-image: url("/assets/img/5.png");
   background-size: cover;
@@ -36,13 +41,13 @@
 .container-product-slider {
   background-color: white;
 }
-.wrapper {
+/* .wrapper {
   margin: 0 100px;
   display: flex;
   overflow-x: auto;
   gap: 1rem;
   padding: 1rem 0;
-}
+} */
 
 /* .wrapper::-webkit-scrollbar {
     height: auto;
